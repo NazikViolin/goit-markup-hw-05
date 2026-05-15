@@ -42,8 +42,8 @@
 
 .modal-close {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 24px;
+    right: 24px;
 
     width: 24px;
     height: 24px;
@@ -91,7 +91,7 @@
 .modal-form {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 8px;
 }
 
 .form-label {
@@ -248,7 +248,7 @@
     opacity: 1;
 }
 
-.page-button-footer {
+.button-modal {
     display: block;
     font-weight: 500;
     font-size: 16px;
@@ -269,7 +269,7 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.page-button-footer:hover,
-.page-button-footer:focus {
+.button-modal:hover,
+.button-modal:focus {
     background-color: #404bbf;
 }
