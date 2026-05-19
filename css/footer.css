@@ -76,10 +76,6 @@
 
 /* === S U B S C R I B E ===*/
 
-.footer-right {
-    /*max-width: 453px;*/
-}
-
 .form-label-footer {
     display: block;
     font-weight: 500;
@@ -91,6 +87,9 @@
 }
 
 .button-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     padding: 8px 24px;
     border: none;
     border-radius: 4px;
@@ -133,9 +132,19 @@
     height: 40px;
     margin-right: 24px;
     background-color: #2e2f42;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input-footer:focus {
     border-color: #31D0AA;
     outline: none;
+}
+
+.form-input-footer::placeholder {
+    color: #fff;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input-footer:focus::placeholder {
+    opacity: 0;
 }
